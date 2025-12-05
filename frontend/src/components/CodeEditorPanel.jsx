@@ -43,7 +43,7 @@ function CodeEditorPanel({
         </button>
       </div>
 
-      <div className="flex-1">
+      <div className="flex-1 overflow-hidden">
         <Editor
           height={"100%"}
           language={LANGUAGE_CONFIG[selectedLanguage].monacoLang}
@@ -56,6 +56,15 @@ function CodeEditorPanel({
             scrollBeyondLastLine: false,
             automaticLayout: true,
             minimap: { enabled: false },
+              scrollbar: {
+              vertical: "auto",
+              horizontal: "auto",
+              useShadows: false,
+              verticalScrollbarSize: 10,
+              horizontalScrollbarSize: 10,
+            },
+            mouseWheelScrollSensitivity: 1,
+            fastScrollSensitivity: 5,
           }}
         />
       </div>
