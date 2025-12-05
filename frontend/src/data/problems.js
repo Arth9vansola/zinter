@@ -339,6 +339,42 @@ print(maxArea([1,1]))  # Expected: 1`,
       java: "49\n1",
     },
   },
+  
+  "longest-common-prefix": {
+    "id": "longest-common-prefix",
+    "title": "Longest Common Prefix",
+    "difficulty": "Easy",
+    "category": "String • Trie",
+    "description": {
+      "text": "Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string \"\".",
+      "notes": []
+    },
+    "examples": [
+      {
+        "input": "[\"flower\",\"flow\",\"flight\"]",
+        "output": "\"fl\""
+      },
+      {
+        "input": "[\"dog\",\"racecar\",\"car\"]",
+        "output": "\"\""
+      }
+    ],
+    "constraints": [
+      "All input strings consist of lowercase letters a-z.",
+      "0 ≤ strs.length ≤ 10^4"
+    ],
+    "starterCode": {
+      "javascript": "function longestCommonPrefix(strs) {\n  // Write your solution here\n}\n\nconsole.log(longestCommonPrefix([\"flower\",\"flow\",\"flight\"]));",
+      "python": "def longest_common_prefix(strs):\n    # Write your solution here\n    pass\n\nprint(longest_common_prefix([\"flower\",\"flow\",\"flight\"]))",
+      "java": "class Solution {\n    public static String longestCommonPrefix(String[] strs) {\n        // Write your solution here\n        return \"\";\n    }\n}\n"
+    },
+    "expectedOutput": {
+      "javascript": "\"fl\"",
+      "python": "\"fl\"",
+      "java": "\"fl\""
+    }
+  },
+  
 };
 
 export const LANGUAGE_CONFIG = {
